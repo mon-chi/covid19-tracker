@@ -28,4 +28,14 @@ body {
 }
 
 .info-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+.info-confirmed,
+.info-recorvered,
+.info-deaths {
+  font-size: 16px;
+  margin-top: 5px;
 }

@@ -44,11 +44,27 @@ const showDataOnMap = (data) => {
     });
 
     let html = `
-    
-     `;
+      <div class="info-container">
+        <div class="info-flag">
+          <img src="${country.countryInfo.flag}" />
+        </div>
+        <div class="info-name">
+          ${country.country}
+        </div>
+        <div class="info-confirmed">
+          ${country.cases}
+        </div>
+        <div class="info-recovered">
+          ${country.recovered}
+        </div>
+        <div class="info-deaths">
+          ${country.deaths}
+        </div>
+      </div>
+    `;
 
     const infowindow = new google.maps.InfoWindow({
-      content: "hi",
+      content: html,
       position: countryCircle.center,
     });
     google.maps.event.addListener(countryCircle, "mouseover", () => {

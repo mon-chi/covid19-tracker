@@ -21,3 +21,11 @@ body {
   background-color: coral;
   height: 700px;
 }
+
+.info-flag img {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.info-name {
+}
